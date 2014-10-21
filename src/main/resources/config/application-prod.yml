@@ -1,0 +1,47 @@
+server:
+    port: 8080
+
+spring:
+    profiles: prod
+    
+    datasource:
+        dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+        url: 
+        databaseName: springbootexample
+        serverName: localhost
+        username: springbootexample
+        password: 
+
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        database: POSTGRESQL
+        openInView: false
+        show_sql: false
+        generate-ddl: false
+        hibernate:
+            ddl-auto: none
+            naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+        properties:
+            hibernate.cache.use_second_level_cache: false
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: false
+            
+            
+
+    mail:
+        baseUrl: http://localhost:8080
+
+    thymeleaf:
+        mode: XHTML
+        cache: true
+        viewNames: error
+
+
+metrics:
+    jmx.enabled: true
+    graphite:
+        enabled: false
+        host: localhost
+        port: 2003
+
+

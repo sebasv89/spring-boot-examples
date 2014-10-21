@@ -1,0 +1,26 @@
+# Maven artifacts
+target/
+*.class
+
+#Eclipse artifacts - taken from https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
+.project
+.metadata
+.classpath
+.settings/
+Servers/
+sandbox
+
+
+# IntelliJ IDEA project files
+*.iml
+.idea
+
+#Clover artifacts
+.clover
+bin/
+
+#OSX Generated files - taken from https://help.github.com/articles/ignoring-files
+.DS_Store
+.DS_Store?
+
+/bin

@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "baseName": "springbootexample",
+    "packageName": "co.svelez.springbootexample",
+    "packageFolder": "co/svelez/springbootexample",
+    "authenticationType": "cookie",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "gulp",
+    "javaVersion": "7"
+  }
+}
